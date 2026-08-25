@@ -52,8 +52,11 @@ The notebooks enable:
 
 ### Data Types Collected
 
+![Nepal field survey polygon mapping](images/polygon_data_nepal_1.png)
+*Field boundary mapping from Nepal crop surveys*
+
 #### Point Data
-GPS coordinates collected 7 meters inside each surveyed plot. Used for:
+GPS coordinates for sampled field locations. Used for:
 - Quick location reference of sampled fields
 - Quality assurance of survey coverage
 - Mapping of sample distribution across regions
@@ -71,20 +74,22 @@ Field boundary geometries digitized by tapping corners of each plot on mobile de
 
 ### Nepal Survey Data
 
-**Point Data - Nepal**
 ![Nepal Point Data](images/point_data_np.png)
+*Survey point locations across Nepal study areas*
 
-**Polygon Data - Nepal**
 ![Nepal Polygon Data 1](images/polygon_data_nepal_1.png)
+*Field polygon boundaries from Nepal surveys*
+
 ![Nepal Polygon Data 2](images/polygon_data_nepal_2.png)
+*Additional field mapping from Nepal collection sites*
 
 ### Mexico Survey Data
 
-**Point Data - Mexico**
 ![Mexico Point Data](images/Mexico%20Point%20data.png)
+*Survey point locations across Mexico study areas*
 
-**Polygon Data - Mexico**
 ![Mexico Polygon Data](images/Mexico%20Polygon%20data.png)
+*Field polygon boundaries from Mexico surveys*
 
 ## Contributors
 
