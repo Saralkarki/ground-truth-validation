@@ -17,7 +17,7 @@ A data collection and monitoring system for crop mapping surveys using Kobo Tool
 
 ## Overview
 
-Field teams collected GPS point locations and field boundary polygons for crop mapping surveys in Nepal and Mexico. The data collection notebooks provide real-time visualization and visual assessment of incoming survey data, enabling rapid quality feedback to field enumerators as data was collected.
+Field teams collected GPS point locations and field boundary polygons for crop mapping surveys in Nepal and Mexico. The data collection notebooks provide real-time visualization and visual assessment of incoming survey data, enabling rapid quality feedback to field enumerators as data was collected. Real-time monitoring identified systematically problematic data collection in certain areas, which led to collection being halted in those affected regions.
 
 **Data Collected:**
 - Nepal: 3,031 data points
@@ -48,10 +48,9 @@ Field boundary geometries digitized by tapping corners of each plot on mobile de
 The primary validation approach is real-time visual assessment of data as it is collected in the field, enabling immediate correction and feedback to enumerators:
 
 ### Visual Evaluation Indicators
-- **Polygon vertices**: At least 4 points expected for field boundaries (3-point polygons flagged as potential quality concerns)
-- **Point-in-polygon**: GPS reference point should fall within its associated polygon boundary
-- **Area consistency**: Calculated polygon area should align with reported plot size
-- **Minimum area**: Polygons less than 10 meters flagged as problematic
+- **Polygon vertices**: At least 4 points required to capture all sides of the field for later analysis (3-point polygons suggest incomplete boundary capture)
+- **Point-in-polygon**: GPS reference point should fall within its associated polygon boundary (visual verification)
+- **Minimum plot area**: 400 m² (approximately 20m × 20m). The form calculated polygon area on capture and displayed it to the enumerator, who proceeded only if the plot exceeded this threshold. This ensures each sampled field is large enough to be resolved against satellite imagery without contamination from adjacent plots.
 
 ### Real-Time Monitoring
 Validation focuses on:
