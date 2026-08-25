@@ -19,6 +19,10 @@ A data collection and monitoring system for crop mapping surveys using Kobo Tool
 
 Field teams collected GPS point locations and field boundary polygons for crop mapping surveys in Nepal and Mexico. The data collection notebooks provide real-time visualization and visual assessment of incoming survey data, enabling rapid quality feedback to field enumerators as data was collected.
 
+**Data Collected:**
+- Nepal: 3,031 data points
+- Mexico: 644 data points
+
 ### Data Types Collected
 
 ![Nepal field survey polygon mapping](images/polygon_data_nepal_1.png)
