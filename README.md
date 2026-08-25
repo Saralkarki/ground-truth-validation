@@ -67,6 +67,25 @@ Field boundary geometries digitized by tapping corners of each plot on mobile de
 - Detailed spatial validation against remote sensing data
 - Land use and land cover classification verification
 
+## Sample Visualizations
+
+### Nepal Survey Data
+
+**Point Data - Nepal**
+![Nepal Point Data](images/point_data_np.png)
+
+**Polygon Data - Nepal**
+![Nepal Polygon Data 1](images/polygon_data_nepal_1.png)
+![Nepal Polygon Data 2](images/polygon_data_nepal_2.png)
+
+### Mexico Survey Data
+
+**Point Data - Mexico**
+![Mexico Point Data](images/Mexico%20Point%20data.png)
+
+**Polygon Data - Mexico**
+![Mexico Polygon Data](images/Mexico%20Polygon%20data.png)
+
 ## Contributors
 
 - Krishna Kafle
