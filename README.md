@@ -86,5 +86,5 @@ Validation focuses on:
 
 ## Contributors
 
-- Krishna Kafle
-- Saral Karki
+- [Krishna Kafle](https://github.com/krishnakafle)
+- [Saral Karki](https://github.com/saralkarki)
