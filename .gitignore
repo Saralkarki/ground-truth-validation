@@ -6,6 +6,7 @@
 # IDE
 .vscode/
 .idea/
+.claude/
 *.swp
 *.swo
 *~
@@ -18,6 +19,7 @@ __pycache__/
 .Python
 env/
 venv/
+.venv/
 ENV/
 build/
 develop-eggs/
@@ -39,10 +41,14 @@ wheels/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Data files (optional - uncomment if needed)
-# *.shp
-# *.dbf
-# *.shx
+# Data files
+data/
+*.shp
+*.dbf
+*.shx
+*.csv
+*.xlsx
+*.xls
 
 # OS
 .DS_Store
