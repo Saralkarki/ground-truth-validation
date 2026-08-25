@@ -10,45 +10,14 @@ A data collection and monitoring system for crop mapping surveys using Kobo Tool
 - **Multi-region monitoring** for Nepal and Mexico projects
 - **Secure credential management** using environment variables
 
-## Project Structure
+## Deliverables
 
-- **Crop Mapping data collection - Monitoring notebook Saral.ipynb** - Nepal crop mapping survey monitoring and visualization
-- **ground_truth_validation_Mexico.ipynb** - Mexico crop mapping survey monitoring and visualization
-- **.env** - Configuration file for Kobo credentials (not tracked in git)
+- **Nepal monitoring notebook** - Ground truth data collection and visual assessment for Nepal crop surveys
+- **Mexico monitoring notebook** - Ground truth data collection and visual assessment for Mexico crop surveys
 
-## Setup
+## Overview
 
-1. Create a `.env` file in the project root with your Kobo credentials:
-   ```
-   # Nepal Kobo Project
-   KOBO_USERNAME=your_username
-   KOBO_PASSWORD=your_password
-   KOBO_DATA_URL=your_kobo_api_url
-   
-   # Mexico Kobo Project
-   KOBO_USERNAME_MEXICO=your_mexico_username
-   KOBO_PASSWORD_MEXICO=your_mexico_password
-   KOBO_DATA_URL_MEXICO=your_mexico_kobo_api_url
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   # or with uv
-   uv sync
-   ```
-
-3. Open the Jupyter notebooks to run surveys and visualizations:
-   - For Nepal data: Open `Crop Mapping data collection - Monitoring notebook Saral.ipynb`
-   - For Mexico data: Open `ground_truth_validation_Mexico.ipynb`
-
-## Data Collection
-
-The notebooks enable:
-- Retrieving survey data from Kobo Toolbox servers
-- Parsing GPS points and polygon geometries from ODK format
-- Analyzing crop types by region and enumerator
-- Visualizing survey locations on interactive Folium maps
+Field teams collected GPS point locations and field boundary polygons for crop mapping surveys in Nepal and Mexico. The data collection notebooks provide real-time visualization and visual assessment of incoming survey data, enabling rapid quality feedback to field enumerators as data was collected.
 
 ### Data Types Collected
 
@@ -56,7 +25,7 @@ The notebooks enable:
 *Field boundary mapping from Nepal crop surveys*
 
 #### Point Data
-GPS coordinates for sampled field locations. Used for:
+GPS coordinates for sampled field locations collected only when phone GPS accuracy was less than 10 meters. Used for:
 - Quick location reference of sampled fields
 - Quality assurance of survey coverage
 - Mapping of sample distribution across regions
@@ -70,12 +39,32 @@ Field boundary geometries digitized by tapping corners of each plot on mobile de
 - Detailed spatial validation against remote sensing data
 - Land use and land cover classification verification
 
+## Validation Criteria
+
+The primary validation approach is real-time visual assessment of data as it is collected in the field, enabling immediate correction and feedback to enumerators:
+
+### Visual Evaluation Indicators
+- **Polygon vertices**: At least 4 points expected for field boundaries (3-point polygons flagged as potential quality concerns)
+- **Point-in-polygon**: GPS reference point should fall within its associated polygon boundary
+- **Area consistency**: Calculated polygon area should align with reported plot size
+- **Minimum area**: Polygons less than 10 meters flagged as problematic
+
+### Real-Time Monitoring
+Validation focuses on:
+- Visual inspection of incoming data to identify issues as surveys progress
+- Rapid feedback to field teams to correct problematic submissions on-site
+- Assessment of enumerator performance and data quality patterns
+- Identifying systematic issues that require retraining or re-survey
+
 ## Sample Visualizations
 
 ### Nepal Survey Data
 
 ![Nepal Point Data](images/point_data_np.png)
 *Survey point locations across Nepal study areas*
+
+![Nepal bad data flagged](images/Nepal_bad_data_flagged.png)
+*Real-time quality assessment identified problematic data, enabling immediate cessation of collection from affected areas*
 
 ![Nepal Polygon Data 1](images/polygon_data_nepal_1.png)
 *Field polygon boundaries from Nepal surveys*
