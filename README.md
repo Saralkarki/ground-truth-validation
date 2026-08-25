@@ -50,6 +50,23 @@ The notebooks enable:
 - Analyzing crop types by region and enumerator
 - Visualizing survey locations on interactive Folium maps
 
+### Data Types Collected
+
+#### Point Data
+GPS coordinates collected 7 meters inside each surveyed plot. Used for:
+- Quick location reference of sampled fields
+- Quality assurance of survey coverage
+- Mapping of sample distribution across regions
+- Ground truthing against satellite imagery
+
+#### Polygon Data
+Field boundary geometries digitized by tapping corners of each plot on mobile devices. Used for:
+- Precise field boundary mapping
+- Calculating plot area
+- Analyzing fragmentation and plot sizes by region
+- Detailed spatial validation against remote sensing data
+- Land use and land cover classification verification
+
 ## Contributors
 
 - Krishna Kafle
